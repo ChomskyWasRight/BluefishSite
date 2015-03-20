@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta name="viewport" content="initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="font" content="Arial, Helvetica, sans-serif" />
+    <meta name="description" content="Random opinions" />
+    <meta name="keywords" content="Jokes, Puns, Stupid thoughts" />
+    <meta name="author" content="Stuart" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+   <script>
+   function date_time(id)
+{
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+        d = date.getDate();
+        day = date.getDay();
+        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = result;
+        setTimeout('date_time("'+id+'");','1000');
+        return true;
+}
+   
+   </script>
+
+    
+    
+    
+    
+    <title>NotCompletelyStupid.com</title>
+  </head>
+  <body>
+   <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</ай>
+
+    <h1 id="cecil">Hallo and welcome to the world of trees!</h1>
+    <figure>
+      <img src="images/trees.jpg" />
+      <figcaption>Trees, eh? They&#39;re very woody</figcaption>
+      <br />
+    </figure>
+    <figure>
+    <img src="images/daffy.jpg" />
+    <figcaption>More trees!</figcaption>    
+    </figure>
+    <figure>
+    <img src="images/les.jpg" />
+    <figcaption>And guess what?</figcaption>    
+    </figure>
+    <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QJvtJeB2Iq0" frameborder="0" allowfullscreen=""></iframe>
+      <figcaption>A really big bugger</figcaption>
+    </figure>
+    
+    <footer id="bob">NotCompletelyStupid.com</footer>
+     
+    
+    
+    
+  </body>
+</html>
